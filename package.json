@@ -1,0 +1,28 @@
+{
+  "name": "@jaredph/typescript-starter",
+  "version": "0.0.0",
+  "description": "Playground to try https://gigobyte.github.io/purify/",
+  "author": "Jared Phayer <dev@jared.ph>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rimraf ./dist",
+    "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "eslint . --ext .ts",
+    "start": "yarn build && node ./dist",
+    "start:dev": "npx nodemon",
+    "typecheck": "tsc --noEmit",
+    "typecheck:watch": "tsc --noEmit --watch"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.5",
+    "@typescript-eslint/eslint-plugin": "5.59.8",
+    "@typescript-eslint/parser": "5.59.8",
+    "eslint": "8.41.0",
+    "nodemon": "2.0.22",
+    "prettier": "2.8.8",
+    "rimraf": "5.0.1",
+    "ts-node": "10.9.1",
+    "typescript": "5.0.4"
+  }
+}
